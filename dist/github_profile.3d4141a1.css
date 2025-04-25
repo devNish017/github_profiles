@@ -1,0 +1,81 @@
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+}
+
+#heading {
+  background-color: #3874b8;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+}
+
+h1 {
+  color: #f0f8ff;
+}
+
+.profile {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 2rem 7rem 0;
+  display: flex;
+}
+
+.cards, .username {
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 7px;
+  margin: 7px;
+  padding: .7rem;
+}
+
+.cards > img, .username > img {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.cards > h2, .cards > a, .username > h2, .username > a {
+  margin-top: -10px;
+  text-decoration: none;
+}
+
+.cards > a {
+  margin: -15px;
+}
+
+.search {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 1rem;
+  display: flex;
+}
+
+.search > input {
+  width: 15rem;
+  height: 1.5rem;
+}
+
+button {
+  color: #f0f8ff;
+  background-color: #3874b8cf;
+  border: none;
+  border-radius: 7px;
+  width: 8rem;
+  height: 1.8rem;
+  margin: 5px;
+  padding: 5px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=github_profile.3d4141a1.css.map */
