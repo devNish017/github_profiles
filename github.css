@@ -93,13 +93,11 @@ button{
   }
 
   .cards:hover,.username:hover{
-    transform: translateY(-10px); /* Upar uthta hai */
-    box-shadow: 0 10px 20px rgba(56, 116, 184, 0.5); /* Blue-ish glow */
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(56, 116, 184, 0.5); 
     border-color: rgb(56, 116, 184);
     cursor:pointer;
     
 
   }
-  .profile {
-    perspective: 1000px;
-  }
+ 
