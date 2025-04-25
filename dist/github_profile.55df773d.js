@@ -18757,9 +18757,12 @@ function Body() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "profile",
                 children: [
-                    profile.map((value)=>{
+                    profile.map((value, index)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "cards",
+                            className: "cards animated-card",
+                            style: {
+                                animationDelay: `${index * 0.1}s`
+                            },
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                     src: value.avatar_url
@@ -18795,7 +18798,7 @@ function Body() {
                         }, this);
                     }),
                     user && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "username",
+                        className: "username animated-card",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                 src: user.avatar_url,

@@ -65,8 +65,8 @@ return(
     {error && <div style={{ color: 'red' }}>{error}</div>}
    </div>
    <div className="profile">{
-    profile.map((value)=>{
-     return( <div key={value.id} className="cards">
+    profile.map((value,index)=>{
+     return( <div key={value.id} className="cards animated-card" style={{ animationDelay: `${index * 0.1}s` }}>
         <img src={value.avatar_url}></img>  
         <h2> {value.login}</h2> 
        
@@ -77,7 +77,7 @@ return(
     })
 }
 {  user && (
-  <div className="username">
+  <div className="username animated-card" >
   <img src={user.avatar_url} alt="user-avatar"></img>
   <h2> {user.login}</h2> 
        

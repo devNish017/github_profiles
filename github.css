@@ -16,22 +16,17 @@ body{
 h1{
     color: aliceblue;
 }
-.profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    flex-wrap: wrap;
 
-    padding: 2rem 7rem 0 7rem;   
-}
 .cards,.username{
     text-align: center;
-    border: 2px solid black;
-    margin: 7px;
+    /* border: 2px solid black; */
+    margin: 10px;
     border-radius: 7px;
     padding: .7rem;
+    /* box-shadow: 2px 5px 10px rgba(68, 67, 67, 0.868); */
+    transition: all 0.3s ease-in-out; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
 }
 .cards>img ,.username>img{
     height: 10rem;
@@ -70,3 +65,41 @@ button{
     height: 1.8rem;
     padding: 5px;
 }
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+
+    padding: 2rem 7rem 0 7rem;   
+    animation-name: pop;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.animated-card {
+    animation: pop 0.6s ease-out forwards;
+  }
+
+  .cards:hover,.username:hover{
+    transform: translateY(-10px); /* Upar uthta hai */
+    box-shadow: 0 10px 20px rgba(56, 116, 184, 0.5); /* Blue-ish glow */
+    border-color: rgb(56, 116, 184);
+    cursor:pointer;
+    
+
+  }
+  .profile {
+    perspective: 1000px;
+  }

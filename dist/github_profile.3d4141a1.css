@@ -19,22 +19,13 @@ h1 {
   color: #f0f8ff;
 }
 
-.profile {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: auto;
-  padding: 2rem 7rem 0;
-  display: flex;
-}
-
 .cards, .username {
   text-align: center;
-  border: 2px solid #000;
   border-radius: 7px;
-  margin: 7px;
+  margin: 10px;
   padding: .7rem;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0 5px #0003;
 }
 
 .cards > img, .username > img {
@@ -77,5 +68,45 @@ button {
   margin: 5px;
   padding: 5px;
   font-weight: 700;
+}
+
+.profile {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 2rem 7rem 0;
+  animation-name: pop;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  display: flex;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animated-card {
+  animation: .6s ease-out forwards pop;
+}
+
+.cards:hover, .username:hover {
+  cursor: pointer;
+  border-color: #3874b8;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px #3874b880;
+}
+
+.profile {
+  perspective: 1000px;
 }
 /*# sourceMappingURL=github_profile.3d4141a1.css.map */
