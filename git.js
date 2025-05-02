@@ -10,6 +10,7 @@ function Gitprofile(){
    
         <>
         <Header></Header>
+        
         <Body></Body>
         
         </>
