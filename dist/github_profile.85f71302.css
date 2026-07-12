@@ -7,7 +7,7 @@ body {
 }
 
 #heading {
-  background-color: #3874b8;
+  background-color: #33cb81;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -66,7 +66,7 @@ h1 {
 
 button {
   color: #f0f8ff;
-  background-color: #3874b8cf;
+  background-color: #33cb81;
   border: none;
   border-radius: 7px;
   width: 8rem;

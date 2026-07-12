@@ -7,7 +7,7 @@ body{
     
 }
 #heading{
-    background-color: rgb(56, 116, 184);
+    background-color: rgb(51, 203, 129);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ h1{
 }
 button{
     margin-left: 5px;
-    background-color:rgba(56, 116, 184, 0.811) ;
+    background-color:rgba(51, 203, 129) ;
     border: none;
     color: aliceblue;
     font-weight: 700;

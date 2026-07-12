@@ -28,7 +28,7 @@ function Body(){
 
     async function particularuser(user){
 
-      if (!user) { // Input validation: empty input should not trigger the API call
+      if (!user) { 
         setError('Please enter a username.');
         return;
     }
